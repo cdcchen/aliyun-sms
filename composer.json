@@ -1,6 +1,6 @@
 {
     "name": "cdcchen/aliyun-sms",
-    "description": "阿里云PHP SDK Core Composer打包封装",
+    "description": "阿里云 SMS SDK Composer打包封装",
     "type": "library",
     "homepage": "https://github.com/cdcchen/aliyun-sms",
     "time": "2018-06-09 13:13:01",
