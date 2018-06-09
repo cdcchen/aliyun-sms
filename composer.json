@@ -1,0 +1,28 @@
+{
+    "name": "cdcchen/aliyun-sms",
+    "description": "阿里云PHP SDK Core Composer打包封装",
+    "type": "library",
+    "homepage": "https://github.com/cdcchen/aliyun-sms",
+    "time": "2018-06-09 13:13:01",
+    "minimum-stability": "stable",
+    "support": {
+        "issues": "https://github.com/cdcchen/aliyun-sms/issues",
+        "wiki": "https://github.com/cdcchen/aliyun-sms/wiki",
+        "source": "https://github.com/cdcchen/aliyun-sms"
+    },
+    "authors": [
+        {
+            "name": "cdcchen",
+            "email": "cdcchen@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "cdcchen/aliyun-core": "^2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aliyun\\Api\\Sms\\": "src/"
+        }
+    }
+}
