@@ -17,8 +17,8 @@
         }
     ],
     "require": {
-        "php": ">=5.5.0",
-        "cdcchen/aliyun-core": "^2.0.0"
+        "php": ">=7.1.0",
+        "cdcchen/aliyun-core": "^3.0.0"
     },
     "autoload": {
         "psr-4": {

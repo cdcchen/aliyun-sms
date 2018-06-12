@@ -17,115 +17,222 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 namespace Aliyun\Api\Sms\Request\V20170525;
 
 use Aliyun\Core\RpcAcsRequest;
 
+/**
+ * Class SendInterSmsRequest
+ * @package Aliyun\Api\Sms\Request\V20170525
+ */
 class SendInterSmsRequest extends RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Dysmsapi", "2017-05-25", "SendInterSms");
-		$this->setMethod("POST");
-	}
+    /**
+     * SendInterSmsRequest constructor.
+     */
+    function __construct()
+    {
+        parent::__construct("Dysmsapi", "2017-05-25", "SendInterSms");
+        $this->setMethod("POST");
+    }
 
-	private  $templateCode;
+    /**
+     * @var string
+     */
+    private $templateCode;
 
-	private  $phoneNumbers;
+    /**
+     * @var string
+     */
+    private $phoneNumbers;
 
-	private  $countryCode;
+    /**
+     * @var string
+     */
+    private $countryCode;
 
-	private  $signName;
+    /**
+     * @var string
+     */
+    private $signName;
 
-	private  $resourceOwnerAccount;
+    /**
+     * @var string
+     */
+    private $resourceOwnerAccount;
 
-	private  $templateParam;
+    /**
+     * @var string
+     */
+    private $templateParam;
 
-	private  $resourceOwnerId;
+    /**
+     * @var string
+     */
+    private $resourceOwnerId;
 
-	private  $ownerId;
+    /**
+     * @var string
+     */
+    private $ownerId;
 
-	private  $outId;
+    /**
+     * @var string
+     */
+    private $outId;
 
-	public function getTemplateCode() {
-		return $this->templateCode;
-	}
+    /**
+     * @return string
+     */
+    public function getTemplateCode(): string
+    {
+        return $this->templateCode;
+    }
 
-	public function setTemplateCode($templateCode) {
-		$this->templateCode = $templateCode;
-		$this->queryParameters["TemplateCode"]=$templateCode;
-	}
+    /**
+     * @param string $templateCode
+     */
+    public function setTemplateCode(string $templateCode)
+    {
+        $this->templateCode = $templateCode;
+        $this->queryParameters["TemplateCode"] = $templateCode;
+    }
 
-	public function getPhoneNumbers() {
-		return $this->phoneNumbers;
-	}
+    /**
+     * @return string
+     */
+    public function getPhoneNumbers(): string
+    {
+        return $this->phoneNumbers;
+    }
 
-	public function setPhoneNumbers($phoneNumbers) {
-		$this->phoneNumbers = $phoneNumbers;
-		$this->queryParameters["PhoneNumbers"]=$phoneNumbers;
-	}
+    /**
+     * @param string $phoneNumbers
+     */
+    public function setPhoneNumbers(string $phoneNumbers)
+    {
+        $this->phoneNumbers = $phoneNumbers;
+        $this->queryParameters["PhoneNumbers"] = $phoneNumbers;
+    }
 
-	public function getCountryCode() {
-		return $this->countryCode;
-	}
+    /**
+     * @return string
+     */
+    public function getCountryCode(): string
+    {
+        return $this->countryCode;
+    }
 
-	public function setCountryCode($countryCode) {
-		$this->countryCode = $countryCode;
-		$this->queryParameters["CountryCode"]=$countryCode;
-	}
+    /**
+     * @param string $countryCode
+     */
+    public function setCountryCode(string $countryCode)
+    {
+        $this->countryCode = $countryCode;
+        $this->queryParameters["CountryCode"] = $countryCode;
+    }
 
-	public function getSignName() {
-		return $this->signName;
-	}
+    /**
+     * @return string
+     */
+    public function getSignName(): string
+    {
+        return $this->signName;
+    }
 
-	public function setSignName($signName) {
-		$this->signName = $signName;
-		$this->queryParameters["SignName"]=$signName;
-	}
+    /**
+     * @param string $signName
+     */
+    public function setSignName(string $signName)
+    {
+        $this->signName = $signName;
+        $this->queryParameters["SignName"] = $signName;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    /**
+     * @return string
+     */
+    public function getResourceOwnerAccount(): string
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    /**
+     * @param string $resourceOwnerAccount
+     */
+    public function setResourceOwnerAccount(string $resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters["ResourceOwnerAccount"] = $resourceOwnerAccount;
+    }
 
-	public function getTemplateParam() {
-		return $this->templateParam;
-	}
+    /**
+     * @return string
+     */
+    public function getTemplateParam(): string
+    {
+        return $this->templateParam;
+    }
 
-	public function setTemplateParam($templateParam) {
-		$this->templateParam = $templateParam;
-		$this->queryParameters["TemplateParam"]=$templateParam;
-	}
+    /**
+     * @param string $templateParam
+     */
+    public function setTemplateParam(string $templateParam)
+    {
+        $this->templateParam = $templateParam;
+        $this->queryParameters["TemplateParam"] = $templateParam;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    /**
+     * @return string
+     */
+    public function getResourceOwnerId(): string
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    /**
+     * @param string $resourceOwnerId
+     */
+    public function setResourceOwnerId(string $resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters["ResourceOwnerId"] = $resourceOwnerId;
+    }
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    /**
+     * @return string
+     */
+    public function getOwnerId(): string
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    /**
+     * @param string $ownerId
+     */
+    public function setOwnerId(string $ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters["OwnerId"] = $ownerId;
+    }
 
-	public function getOutId() {
-		return $this->outId;
-	}
+    /**
+     * @return string
+     */
+    public function getOutId(): string
+    {
+        return $this->outId;
+    }
 
-	public function setOutId($outId) {
-		$this->outId = $outId;
-		$this->queryParameters["OutId"]=$outId;
-	}
-	
+    /**
+     * @param string $outId
+     */
+    public function setOutId(string $outId)
+    {
+        $this->outId = $outId;
+        $this->queryParameters["OutId"] = $outId;
+    }
+
 }

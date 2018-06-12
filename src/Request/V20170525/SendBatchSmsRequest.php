@@ -22,100 +22,195 @@ namespace Aliyun\Api\Sms\Request\V20170525;
 
 use Aliyun\Core\RpcAcsRequest;
 
+/**
+ * Class SendBatchSmsRequest
+ * @package Aliyun\Api\Sms\Request\V20170525
+ */
 class SendBatchSmsRequest extends RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Dysmsapi", "2017-05-25", "SendBatchSms");
-		$this->setMethod("POST");
-	}
+    /**
+     * SendBatchSmsRequest constructor.
+     */
+    function __construct()
+    {
+        parent::__construct("Dysmsapi", "2017-05-25", "SendBatchSms");
+        $this->setMethod("POST");
+    }
 
-	private  $templateCode;
+    /**
+     * @var string
+     */
+    private $templateCode;
 
-	private  $templateParamJson;
+    /**
+     * @var string
+     */
+    private $templateParamJson;
 
-	private  $resourceOwnerAccount;
+    /**
+     * @var string
+     */
+    private $resourceOwnerAccount;
 
-	private  $smsUpExtendCodeJson;
+    /**
+     * @var string
+     */
+    private $smsUpExtendCodeJson;
 
-	private  $resourceOwnerId;
+    /**
+     * @var string
+     */
+    private $resourceOwnerId;
 
-	private  $signNameJson;
+    /**
+     * @var string
+     */
+    private $signNameJson;
 
-	private  $ownerId;
+    /**
+     * @var string
+     */
+    private $ownerId;
 
-	private  $phoneNumberJson;
+    /**
+     * @var string
+     */
+    private $phoneNumberJson;
 
-	public function getTemplateCode() {
-		return $this->templateCode;
-	}
+    /**
+     * @return string
+     */
+    public function getTemplateCode(): string
+    {
+        return $this->templateCode;
+    }
 
-	public function setTemplateCode($templateCode) {
-		$this->templateCode = $templateCode;
-		$this->queryParameters["TemplateCode"]=$templateCode;
-	}
+    /**
+     * @param string $templateCode
+     */
+    public function setTemplateCode(string $templateCode)
+    {
+        $this->templateCode = $templateCode;
+        $this->queryParameters["TemplateCode"] = $templateCode;
+    }
 
-	public function getTemplateParamJson() {
-		return $this->templateParamJson;
-	}
+    /**
+     * @return string
+     */
+    public function getTemplateParamJson(): string
+    {
+        return $this->templateParamJson;
+    }
 
-	public function setTemplateParamJson($templateParamJson) {
-		$this->templateParamJson = $templateParamJson;
-		$this->queryParameters["TemplateParamJson"]=$templateParamJson;
-	}
+    /**
+     * @param string $templateParamJson
+     */
+    public function setTemplateParamJson(string $templateParamJson)
+    {
+        $this->templateParamJson = $templateParamJson;
+        $this->queryParameters["TemplateParamJson"] = $templateParamJson;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    /**
+     * @return string
+     */
+    public function getResourceOwnerAccount(): string
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    /**
+     * @param string $resourceOwnerAccount
+     */
+    public function setResourceOwnerAccount(string $resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters["ResourceOwnerAccount"] = $resourceOwnerAccount;
+    }
 
-	public function getSmsUpExtendCodeJson() {
-		return $this->smsUpExtendCodeJson;
-	}
+    /**
+     * @return string
+     */
+    public function getSmsUpExtendCodeJson(): string
+    {
+        return $this->smsUpExtendCodeJson;
+    }
 
-	public function setSmsUpExtendCodeJson($smsUpExtendCodeJson) {
-		$this->smsUpExtendCodeJson = $smsUpExtendCodeJson;
-		$this->queryParameters["SmsUpExtendCodeJson"]=$smsUpExtendCodeJson;
-	}
+    /**
+     * @param string $smsUpExtendCodeJson
+     */
+    public function setSmsUpExtendCodeJson(string $smsUpExtendCodeJson)
+    {
+        $this->smsUpExtendCodeJson = $smsUpExtendCodeJson;
+        $this->queryParameters["SmsUpExtendCodeJson"] = $smsUpExtendCodeJson;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    /**
+     * @return string
+     */
+    public function getResourceOwnerId(): string
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    /**
+     * @param string $resourceOwnerId
+     */
+    public function setResourceOwnerId(string $resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters["ResourceOwnerId"] = $resourceOwnerId;
+    }
 
-	public function getSignNameJson() {
-		return $this->signNameJson;
-	}
+    /**
+     * @return string
+     */
+    public function getSignNameJson(): string
+    {
+        return $this->signNameJson;
+    }
 
-	public function setSignNameJson($signNameJson) {
-		$this->signNameJson = $signNameJson;
-		$this->queryParameters["SignNameJson"]=$signNameJson;
-	}
+    /**
+     * @param string $signNameJson
+     */
+    public function setSignNameJson(string $signNameJson)
+    {
+        $this->signNameJson = $signNameJson;
+        $this->queryParameters["SignNameJson"] = $signNameJson;
+    }
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    /**
+     * @return string
+     */
+    public function getOwnerId(): string
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    /**
+     * @param string $ownerId
+     */
+    public function setOwnerId(string $ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters["OwnerId"] = $ownerId;
+    }
 
-	public function getPhoneNumberJson() {
-		return $this->phoneNumberJson;
-	}
+    /**
+     * @return string
+     */
+    public function getPhoneNumberJson(): string
+    {
+        return $this->phoneNumberJson;
+    }
 
-	public function setPhoneNumberJson($phoneNumberJson) {
-		$this->phoneNumberJson = $phoneNumberJson;
-		$this->queryParameters["PhoneNumberJson"]=$phoneNumberJson;
-	}
-	
+    /**
+     * @param string $phoneNumberJson
+     */
+    public function setPhoneNumberJson(string $phoneNumberJson)
+    {
+        $this->phoneNumberJson = $phoneNumberJson;
+        $this->queryParameters["PhoneNumberJson"] = $phoneNumberJson;
+    }
+
 }

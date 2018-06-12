@@ -17,60 +17,112 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 namespace Aliyun\Api\Sms\Request\V20170525;
 
 use Aliyun\Core\RpcAcsRequest;
 
+/**
+ * Class QueryInterSmsIsoInfoRequest
+ * @package Aliyun\Api\Sms\Request\V20170525
+ */
 class QueryInterSmsIsoInfoRequest extends RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Dysmsapi", "2017-05-25", "QueryInterSmsIsoInfo");
-		$this->setMethod("POST");
-	}
+    /**
+     * QueryInterSmsIsoInfoRequest constructor.
+     */
+    function __construct()
+    {
+        parent::__construct("Dysmsapi", "2017-05-25", "QueryInterSmsIsoInfo");
+        $this->setMethod("POST");
+    }
 
-	private  $resourceOwnerAccount;
+    /**
+     * @var string
+     */
+    private $resourceOwnerAccount;
 
-	private  $countryName;
+    /**
+     * @var string
+     */
+    private $countryName;
 
-	private  $resourceOwnerId;
+    /**
+     * @var string
+     */
+    private $resourceOwnerId;
 
-	private  $ownerId;
+    /**
+     * @var string
+     */
+    private $ownerId;
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    /**
+     * @return string
+     */
+    public function getResourceOwnerAccount(): string
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    /**
+     * @param string $resourceOwnerAccount
+     */
+    public function setResourceOwnerAccount(string $resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters["ResourceOwnerAccount"] = $resourceOwnerAccount;
+    }
 
-	public function getCountryName() {
-		return $this->countryName;
-	}
+    /**
+     * @return string
+     */
+    public function getCountryName(): string
+    {
+        return $this->countryName;
+    }
 
-	public function setCountryName($countryName) {
-		$this->countryName = $countryName;
-		$this->queryParameters["CountryName"]=$countryName;
-	}
+    /**
+     * @param string $countryName
+     */
+    public function setCountryName(string $countryName)
+    {
+        $this->countryName = $countryName;
+        $this->queryParameters["CountryName"] = $countryName;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    /**
+     * @return string
+     */
+    public function getResourceOwnerId(): string
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    /**
+     * @param string $resourceOwnerId
+     */
+    public function setResourceOwnerId(string $resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters["ResourceOwnerId"] = $resourceOwnerId;
+    }
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    /**
+     * @return string
+     */
+    public function getOwnerId(): string
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
-	
+    /**
+     * @param string $ownerId
+     */
+    public function setOwnerId(string $ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters["OwnerId"] = $ownerId;
+    }
+
 }
